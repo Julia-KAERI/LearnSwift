@@ -5,7 +5,7 @@
 swift 에서 함수의 정의의 예를 들어보자
 
 ```swift
-func myfunc(initial vi:Int, final vf:Int)->[Int]{
+func myfunc(initial vi:Int=0, final vf:Int)->[Int]{
     Array(stride(from:vi, to:vf+1, by:1))
 }
 var arr1 = myfunc(initial:1, final:10)
@@ -19,6 +19,7 @@ func incr(_ input:Int)->Int {
 }
 print(incr(3))
 ```
+
 </br>
 
 ## 묵시적 반환
@@ -32,4 +33,6 @@ func incr(_ v: Int)->Int{
 
 let c:Int = incr(3) // c == 4
 ```
+
+## 여러 값의 반환, 선택적 반환
 
